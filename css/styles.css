@@ -15,18 +15,23 @@ hr {
 
 @font-face {
     font-family: "Typo Draft Demo";
-    src: url('Typo\ Draft\ Demo.otf') format('embedded-opentype'), /* Internet Explorer */
-         url('Typo\ Draft\ Demo.otf') format('woff2'),             /* Super Modern Browsers */
-         url('Typo\ Draft\ Demo.otf') format('woff'),              /* Pretty Modern Browsers */
-         url('Typo\ Draft\ Demo.otf') format('truetype'),          /* Safari, Android, iOS */
-         url('Typo\ Draft\ Demo.otf') format('svg');  
+    src: url('Typo\ Draft\ Demo.otf') format('embedded-opentype'),
+        /* Internet Explorer */
+        url('Typo\ Draft\ Demo.otf') format('woff2'),
+        /* Super Modern Browsers */
+        url('Typo\ Draft\ Demo.otf') format('woff'),
+        /* Pretty Modern Browsers */
+        url('Typo\ Draft\ Demo.otf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('Typo\ Draft\ Demo.otf') format('svg');
 }
+
 /* ----------------------------- Navigation ----------------------------- */
 
 #progress-bar-container {
-    height:     80%;
-    width:      5px;
-    position:   fixed;
+    height: 80%;
+    width: 5px;
+    position: fixed;
     margin: 3% 0 0 1%;
     background: #ffffff;
     z-index: 2;
@@ -36,9 +41,9 @@ hr {
 }
 
 #progress-bar {
-    height:      0%;
-    width:       100%;
-    background:  rgb(0, 0, 0);
+    height: 0%;
+    width: 100%;
+    background: rgb(0, 0, 0);
     border-radius: 50px;
 }
 
@@ -75,14 +80,6 @@ hr {
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 56%;
-}
-
-.hero img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 56%;
-    height: auto;
 }
 
 .hero h1 {
@@ -123,34 +120,35 @@ hr {
     -webkit-text-fill-color: transparent;
 }
 
-.arrow{
-    
-        width: 2px;
-        height: 17vw;
-        background-color: #9605AD;
-        /* Rotate div */
-        -ms-transform: rotate(90deg);
-        /* IE 9 */
-        -webkit-transform: rotate(90deg);
-        /* Chrome, Safari, Opera */
-        transform: rotate(90deg);
-        transform-origin: bottom left;
-        position: absolute;
-        left: 25.5%;
-        bottom: 67%;
+.arrow {
 
-      
+    width: 2px;
+    height: 17vw;
+    background-color: #9605AD;
+    /* Rotate div */
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    left: 25.5%;
+    bottom: 67%;
+
+
 }
+
 .arrow:before {
     content: '';
-      position: absolute;
-      bottom: -6px;
-      left: -3px;
-      border-style: solid;
-      transform: rotate(60deg);
-      border-width: 0 5px 8px 5px;
-      border-color: transparent transparent #9605AD transparent;
-  }
+    position: absolute;
+    bottom: -6px;
+    left: -3px;
+    border-style: solid;
+    transform: rotate(60deg);
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #9605AD transparent;
+}
 
 .arrow:after {
     content: '';
@@ -161,15 +159,15 @@ hr {
     transform: translate(-40%, -50%);
     border-width: 0 5px 8px 5px;
     border-color: transparent transparent #9605AD transparent;
-  }
+}
 
-.px5{
+.px5 {
 
     position: absolute;
     left: 33%;
-        bottom: 63.5%;
-        color: #9605AD;
-        font-size: 1vw;
+    bottom: 63.5%;
+    color: #9605AD;
+    font-size: 1vw;
 }
 
 
@@ -212,6 +210,133 @@ hr {
     bottom: 0;
     right: 0;
 }
+
+
+
+@media (max-width: 600px) {
+    .hero {
+        height: 110vw;
+        position: relative;
+        background-image: url(../img/Template_\ Samsung\ Galaxy.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 40%;
+        background-position: right 8% bottom 10%;
+    }
+
+    .hero h1 {
+        position: absolute;
+        top: 12%;
+        left: 8%;
+        font-size: 7vw;
+        font-family: "Antic Didone", serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+        text-size-adjust: none;
+    }
+
+    .hero .h1a {
+        position: absolute;
+        top: 25.5%;
+        left: 8%;
+        font-size: 7vw;
+        font-family: "Antic Didone", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        line-height: 0;
+    }
+
+    #scroll-to-get {
+        width: 30%;
+        height: 25%;
+        position: absolute;
+        bottom: 3%;
+        left: 12%;
+        font-size: 4vw;
+        font-family: "Share Tech Mono", monospace;
+        color: #000;
+        text-align: center;
+        display: inline-block;
+        background-image: url(../img/Down\ arrow.png);
+        background-size: 4vw;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .let-me-help-span {
+        display: none;
+    }
+
+    #let-me-help {
+        display: none;
+    }
+
+
+
+
+    .arrow {
+
+        width: 1px;
+        height: 12vw;
+        background-color: #9605AD;
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        transform-origin: bottom left;
+        position: absolute;
+        left: 39.5%;
+        bottom: 74.5%;
+
+
+    }
+
+    .arrow:before {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: -2px;
+        border-style: solid;
+        transform: rotate(60deg);
+        border-width: 0 3px 4px 3px;
+        border-color: transparent transparent #9605AD transparent;
+    }
+
+    .arrow:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-style: solid;
+        transform: translate(-40%, -50%);
+        border-width: 0 3px 4px 3px;
+        border-color: transparent transparent #9605AD transparent;
+    }
+
+    .px5 {
+        position: absolute;
+        left: 44%;
+        bottom: 72%;
+        color: #9605AD;
+        font-size: 1.5vw;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
 
 
@@ -322,32 +447,32 @@ hr {
 
 
 
-.i1a{
+.i1a {
     width: 85% !important;
 }
 
 
-.i2a{
+.i2a {
     width: 65% !important;
 }
 
-.i3a{
+.i3a {
     width: 60%;
 }
 
-.i4a{
+.i4a {
     width: 90%;
 }
 
-.i5a{
+.i5a {
     width: 70%;
 }
 
-.i6a{
+.i6a {
     width: 20%;
 }
 
-.i7a{
+.i7a {
     width: 100%;
 }
 
@@ -403,9 +528,9 @@ hr {
     width: 80%;
     max-width: 1200px;
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 2fr; 
-    gap: 26px; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    gap: 26px;
     margin: 0 auto 0 auto;
 
 }
@@ -413,7 +538,7 @@ hr {
 
 .project-grid-item {
     width: 100%;
-  
+
     border-style: dashed;
     border-width: 2px;
     border-color: #000;
@@ -429,49 +554,55 @@ img {
     transition: all 1s;
 }
 
-.proj1{
+.proj1 {
     grid-column: span 2;
 }
-.proj2{
+
+.proj2 {
     grid-column: span 2;
 }
-.proj3{
+
+.proj3 {
     grid-column: span 2;
 }
 
 
-@container gridContainer (max-width: 800px){
-    .project-flex-container{
+@container gridContainer (max-width: 800px) {
+    .project-flex-container {
         flex-direction: column-reverse;
         align-items: flex-start !important;
     }
-    .project-flex-left{
-       
-            margin-right: 40px;
-    
+
+    .project-flex-left {
+
+        margin-right: 40px;
+
     }
-   
+
 }
 
 @media (max-width: 1200px) {
     .projects-grid-container {
-        
+
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-      
+
     }
 
     .project-item-flex {
         flex-direction: column-reverse;
     }
+
     img {
         height: auto !important;
         width: 100% !important;
     }
-    .proj4{
+
+    .proj4 {
         grid-column: span 2;
     }
-    .proj5{
+
+    .proj5 {
         grid-column: span 2;
     }
 }
@@ -496,7 +627,7 @@ img {
 
 .project-flex-right {
     flex-grow: 0;
-   flex-basis: 50%;
+    flex-basis: 50%;
 }
 
 
