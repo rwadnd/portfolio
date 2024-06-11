@@ -1,0 +1,678 @@
+body {
+    background-color: #FAFBFF;
+    text-align: center;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    position: static;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Typo Draft Demo";
+    src: url('Typo\ Draft\ Demo.otf') format('embedded-opentype'), /* Internet Explorer */
+         url('Typo\ Draft\ Demo.otf') format('woff2'),             /* Super Modern Browsers */
+         url('Typo\ Draft\ Demo.otf') format('woff'),              /* Pretty Modern Browsers */
+         url('Typo\ Draft\ Demo.otf') format('truetype'),          /* Safari, Android, iOS */
+         url('Typo\ Draft\ Demo.otf') format('svg');  
+}
+/* ----------------------------- Navigation ----------------------------- */
+
+#progress-bar-container {
+    height:     80%;
+    width:      5px;
+    position:   fixed;
+    margin: 3% 0 0 1%;
+    background: #ffffff;
+    z-index: 2;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#progress-bar {
+    height:      0%;
+    width:       100%;
+    background:  rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+
+
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: #FAFBFF;
+    z-index: 1;
+}
+
+.nav-links {
+    justify-content: space-between;
+    display: flex;
+    padding: 1% 8%;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+/* ----------------------------- Hero ----------------------------- */
+.hero {
+    height: 45vw;
+    position: relative;
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 56%;
+}
+
+.hero img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 56%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    font-size: 6vw;
+    font-family: "Antic Didone", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    text-size-adjust: none;
+}
+
+.hero .h1a {
+    position: absolute;
+    top: 32.5%;
+    left: 8%;
+    font-size: 4vw;
+    font-family: "Antic Didone", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    line-height: 0;
+}
+
+#designer {
+    font-family: "Typo Draft Demo";
+    position: absolute;
+    top: 29%;
+    left: 46%;
+    font-size: 2.6vw;
+    background: #6A6A6A;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.arrow{
+    
+        width: 2px;
+        height: 17vw;
+        background-color: #9605AD;
+        /* Rotate div */
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(90deg);
+        transform-origin: bottom left;
+        position: absolute;
+        left: 25.5%;
+        bottom: 67%;
+
+      
+}
+.arrow:before {
+    content: '';
+      position: absolute;
+      bottom: -6px;
+      left: -3px;
+      border-style: solid;
+      transform: rotate(60deg);
+      border-width: 0 5px 8px 5px;
+      border-color: transparent transparent #9605AD transparent;
+  }
+
+.arrow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    transform: translate(-40%, -50%);
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #9605AD transparent;
+  }
+
+.px5{
+
+    position: absolute;
+    left: 33%;
+        bottom: 63.5%;
+        color: #9605AD;
+        font-size: 1vw;
+}
+
+
+#scroll-to-get {
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    bottom: 3%;
+    left: 12%;
+    font-size: 2vw;
+    font-family: "Share Tech Mono", monospace;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    background-image: url(../img/Down\ arrow.png);
+    background-size: 2vw;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+#let-me-help {
+    width: 22%;
+    height: 22%;
+    position: absolute;
+    top: 0%;
+    right: 4%;
+    font-size: 2vw;
+    font-family: "Share Tech Mono", monospace;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    background-image: url(../img/Left\ arrow\ curved.png);
+    background-size: 4vw;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.let-me-help-span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+/* ----------------------------- Skills -----------------------------*/
+
+
+.skills {
+    padding: 100px 0 100px 0;
+    width: 100%;
+}
+
+.skills-panel {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    background-color: #ffffff;
+    border: #000;
+    border-width: 1px;
+    border-style: solid;
+    margin: 0 auto 0 auto;
+}
+
+.skills-panel-header {
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle-container {
+    width: 5%;
+    min-width: 45px;
+    display: flex;
+}
+
+.circle {
+    margin: 5%;
+    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    width: 33.3%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+
+}
+
+.skills-panel h2 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.empty {
+    width: 5%;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4%;
+    gap: 10%;
+}
+
+.skill-list-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    max-width: 700px;
+    margin-bottom: 2%;
+    justify-content: flex-start;
+}
+
+.skill-item {
+    width: 300px;
+    text-align: center;
+}
+
+.skill-item h3 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: left;
+    margin: 0 0 12px 0;
+}
+
+
+.progressbar {
+    border-radius: 3px;
+    background: rgba(255, 254, 254, 0.25);
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.progressbar-filled {
+    height: 10px;
+    transition: 0.2s linear;
+    background-color: #3D8ABD;
+    width: 0%;
+    transition: width 2s;
+}
+
+
+
+
+.i1a{
+    width: 85% !important;
+}
+
+
+.i2a{
+    width: 65% !important;
+}
+
+.i3a{
+    width: 60%;
+}
+
+.i4a{
+    width: 90%;
+}
+
+.i5a{
+    width: 70%;
+}
+
+.i6a{
+    width: 20%;
+}
+
+.i7a{
+    width: 100%;
+}
+
+
+.skill-list-right {
+    min-width: max-content;
+
+    ul {
+        margin-top: 40%;
+        list-style-type: none;
+        text-align: left;
+        padding: 0;
+
+        li {
+            padding: 2% 0;
+            font-family: "Roboto Mono", monospace;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26.38px;
+            text-align: left;
+
+        }
+    }
+}
+
+.fa-square-check {
+    font-size: 24px;
+    color: #3D8ABD
+}
+
+.skill-list-right div {
+    display: flex;
+    align-items: center;
+    margin: 26px 0 26px 0;
+}
+
+.skill-list-right span {
+    margin-left: 10px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+
+/* --------------------- Projects ---------------------- */
+.projects {
+    padding: 0 0 100px 0;
+}
+
+.projects-grid-container {
+    width: 80%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 2fr; 
+    gap: 26px; 
+    margin: 0 auto 0 auto;
+
+}
+
+
+.project-grid-item {
+    width: 100%;
+  
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #000;
+    transition: all 66s linear;
+    overflow: hidden;
+    container-type: inline-size;
+    container-name: gridContainer;
+}
+
+img {
+    width: 100%;
+    position: relative;
+    transition: all 1s;
+}
+
+.proj1{
+    grid-column: span 2;
+}
+.proj2{
+    grid-column: span 2;
+}
+.proj3{
+    grid-column: span 2;
+}
+
+
+@container gridContainer (max-width: 800px){
+    .project-flex-container{
+        flex-direction: column-reverse;
+        align-items: flex-start !important;
+    }
+    .project-flex-left{
+       
+            margin-right: 40px;
+    
+    }
+   
+}
+
+@media (max-width: 1200px) {
+    .projects-grid-container {
+        
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+      
+    }
+
+    .project-item-flex {
+        flex-direction: column-reverse;
+    }
+    img {
+        height: auto !important;
+        width: 100% !important;
+    }
+    .proj4{
+        grid-column: span 2;
+    }
+    .proj5{
+        grid-column: span 2;
+    }
+}
+
+
+
+.project-grid-item:hover {
+    border-style: solid;
+}
+
+.project-grid-item:hover img {
+    height: 110%;
+}
+
+
+.project-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+
+.project-flex-right {
+    flex-grow: 0;
+   flex-basis: 50%;
+}
+
+
+.project-flex-container:hover {
+    background-color: #fafafa;
+}
+
+.project-flex-container:hover h1 {
+    color: #5db9f7;
+}
+
+.project-flex-container:hover h3 {
+    color: #5db9f7;
+}
+
+.project-flex-container:hover h2 {
+    color: #5db9f7;
+}
+
+.project-flex-left {
+    text-align: left;
+    margin-left: 40px;
+    flex-basis: 40%;
+    transition: color 1s;
+
+    h1 {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 42px;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+        transition: color 0.2s;
+    }
+
+    h2 {
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: -0.023em;
+        text-align: left;
+        color: #949494;
+        transition: color 0.2s;
+    }
+
+
+    h3 {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: -0.023em;
+        text-align: left;
+        color: #E5B738;
+        transition: color 0.2s;
+    }
+}
+
+.proj2 h3 {
+    color: #0D6EFD;
+}
+
+
+.proj3 h3 {
+    color: #DA2A59;
+}
+
+
+
+
+
+
+/* ---------------------------- footer ------------------------------- */
+
+.call-to-action {
+    padding: 150px 0 120px 0;
+
+    h1 {
+        color: #0D6EFD;
+        font-family: "League Spartan", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+
+}
+
+.footer {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
+    background-color: #0a2a3f;
+    height: 200px;
+
+    p {
+        font-family: "League Spartan", sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+    }
+}
+
+.footer-icons {
+
+    i {
+        font-size: 26px;
+        margin: 0 16px 0 16px;
+    }
+}
+
+
+.button-23 {
+    background-color: #FFFFFF;
+    border: 3px solid #222222;
+    font-family: "Roboto Mono", monospace;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 24px 0 96px 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 250px;
+    height: 80px;
+
+}
+
+.button-23:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.button-23:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+}
+
+
+
+
+/* -------------------------------------------------------------------- */
+
+
+.triangle {
+    position: relative;
+    background: rgb(255, 255, 255);
+}
+
+.triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 67px 67px 0 67px;
+    border-color: rgb(255, 255, 255) transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+}
+
+.full-height {
+    background: rgb(233, 240, 246);
+}
