@@ -89,7 +89,7 @@ hr {
         font-size: 1rem;
         font-style: normal;
     }
-    hr{
+    #heroHR{
         display: none;
     }
 }
@@ -448,7 +448,7 @@ hr {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: left;
     margin: 0 0 12px 0;
 }
@@ -541,12 +541,24 @@ hr {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 
 
 @media (max-width: 600px) {
+    .skills-panel h2 {
+        font-size: 1.2rem;
+    }
+
+    .skill-item h3 {
+  
+        font-size: 1.2rem;
+      
+    }
+    .skill-list-right span {
+        font-size: 1.2rem;
+    }
     .circle-container {
         display: none;
         width: 5%;
@@ -572,6 +584,14 @@ hr {
     .skill-list-right {
         margin-top: 15%;
     }
+
+    .skill-list-left {
+        margin-top: 3%;
+        gap: 60px;
+     
+    }
+
+
 }
 
 
