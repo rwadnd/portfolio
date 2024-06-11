@@ -11,6 +11,7 @@ html {
 hr {
     position: static;
     margin: 0;
+ 
 }
 
 @font-face {
@@ -72,7 +73,7 @@ hr {
     font-style: normal;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
     .nav-links {
         justify-content: space-between;
@@ -87,7 +88,10 @@ hr {
         font-weight: 400;
         font-size: 1rem;
         font-style: normal;
-}
+    }
+    hr{
+        display: none;
+    }
 }
 
 /* ----------------------------- Hero ----------------------------- */
@@ -259,7 +263,7 @@ hr {
 
     .hero .h1a {
         position: absolute;
-        top: 25.5%;
+        top: 27.5%;
         left: 8%;
         font-size: 7vw;
         font-family: "Antic Didone", serif;
@@ -267,6 +271,10 @@ hr {
         font-style: normal;
         margin: 0;
         line-height: 0;
+    }
+
+    #designer {
+        display: none;
     }
 
     #scroll-to-get {
@@ -308,7 +316,7 @@ hr {
         transform-origin: bottom left;
         position: absolute;
         left: 39.5%;
-        bottom: 74.5%;
+        bottom: 72.5%;
 
 
     }
@@ -338,7 +346,7 @@ hr {
     .px5 {
         position: absolute;
         left: 44%;
-        bottom: 72%;
+        bottom: 70%;
         color: #9605AD;
         font-size: 1.5vw;
     }
@@ -538,25 +546,29 @@ hr {
 
 
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     .circle-container {
         display: none;
         width: 5%;
         min-width: 45px;
     }
-    .empty{
+
+    .empty {
         display: none;
     }
+
     .skills-panel-header {
         padding: 0 2%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .skill-item {
         width: 100%;
         text-align: center;
     }
+
     .skill-list-right {
         margin-top: 15%;
     }
@@ -634,7 +646,7 @@ img {
 @media (max-width: 1200px) {
     .projects-grid-container {
 
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
         grid-template-columns: 1fr 1fr;
 
     }
@@ -706,7 +718,7 @@ img {
     h1 {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
-        font-size: 42px;
+        font-size: 2.5rem;
         font-weight: 500;
         font-style: normal;
         font-variation-settings: "slnt" 0;
@@ -715,9 +727,9 @@ img {
 
     h2 {
         font-family: "Inter", sans-serif;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 500;
-        line-height: 40px;
+        line-height: 150%;
         letter-spacing: -0.023em;
         text-align: left;
         color: #949494;
@@ -727,10 +739,8 @@ img {
 
     h3 {
         font-family: "Inter", sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
-        line-height: 30px;
-        letter-spacing: -0.023em;
         text-align: left;
         color: #E5B738;
         transition: color 0.2s;
@@ -746,7 +756,29 @@ img {
     color: #DA2A59;
 }
 
+@media (max-width: 600px) {
+    .project-flex-left {
 
+        h1 {
+            font-size: 1.5rem;
+
+        }
+
+        h2 {
+
+            font-size: 1rem;
+
+        }
+
+
+        h3 {
+
+            font-size: 0.5rem;
+margin-bottom: 10%;
+        }
+    }
+
+}
 
 
 
@@ -762,6 +794,7 @@ img {
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
+        line-height: 150%;
     }
 
 
@@ -831,9 +864,9 @@ img {
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     .call-to-action {
-        h1{
+        h1 {
             color: #0D6EFD;
             font-family: "League Spartan", sans-serif;
             font-optical-sizing: auto;
@@ -842,7 +875,7 @@ img {
             font-size: 1.5;
             margin: 0 2% 4% 2%;
         }
-        
+
     }
 
     .button-23 {
@@ -853,7 +886,7 @@ img {
         color: #222222;
         cursor: pointer;
         display: inline-block;
-    
+
         font-size: 20px;
         font-weight: 600;
         line-height: 20px;
@@ -869,6 +902,7 @@ img {
         width: 220px;
         height: 70px;
     }
+
     .footer {
         z-index: 5;
         position: relative;
@@ -879,7 +913,7 @@ img {
         padding: 0 5% 0 5%;
         background-color: #0a2a3f;
         height: 200px;
-    
+
         p {
             font-family: "League Spartan", sans-serif;
             font-size: 18px;
