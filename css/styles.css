@@ -238,7 +238,7 @@ hr {
     .hero {
         height: 110vw;
         position: relative;
-        background-image: url(../img/Template_\ Samsung\ Galaxy.png);
+        background-image: url(../img/Phone.svg);
         background-repeat: no-repeat;
         background-position: right bottom;
         background-size: 40%;
