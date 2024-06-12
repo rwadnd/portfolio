@@ -35,7 +35,7 @@ hr {
     position: fixed;
     top:14%;
     margin: 3% 0 0 1%;
-    background: #ffffff;
+    background: #FAFBFF;
     z-index: 2;
     border-radius: 50px;
     border-style: solid;
@@ -399,7 +399,7 @@ hr {
 
 .circle {
     margin: 5%;
-    background-color: #fff;
+    background-color: #FAFBFF;
     border: 1px solid rgb(0, 0, 0);
     width: 33.3%;
     aspect-ratio: 1/1;
@@ -948,7 +948,7 @@ margin-bottom: 10%;
 
 .triangle {
     position: relative;
-    background: rgb(255, 255, 255);
+    background: #FAFBFF;
 }
 
 .triangle::before {
