@@ -33,6 +33,7 @@ hr {
     height: 80%;
     width: 5px;
     position: fixed;
+    top:14%;
     margin: 3% 0 0 1%;
     background: #ffffff;
     z-index: 2;
@@ -47,8 +48,6 @@ hr {
     background: rgb(0, 0, 0);
     border-radius: 50px;
 }
-
-
 
 
 .nav-bar {
@@ -892,7 +891,7 @@ margin-bottom: 10%;
             font-optical-sizing: auto;
             font-weight: 500;
             font-style: normal;
-            font-size: 1.5;
+            font-size: 1.8rem;
             margin: 0 2% 4% 2%;
         }
 
