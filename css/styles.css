@@ -236,12 +236,12 @@ hr {
 
 @media (max-width: 600px) {
     .hero {
-        height: 110vw;
+        height: 120vw;
         position: relative;
         background-image: url(../img/Phone.png);
         background-repeat: no-repeat;
         background-position: right bottom;
-        background-size: 40%;
+        background-size: 46%;
         background-position: right 8% bottom 10%;
     }
 
@@ -306,16 +306,16 @@ hr {
 
     .arrow {
 
-        width: 1px;
-        height: 12vw;
-        background-color: #9605AD;
-        -ms-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        transform-origin: bottom left;
-        position: absolute;
-        left: 39.5%;
-        bottom: 72.5%;
+            width: 1px;
+    height: 7vw;
+    background-color: #9605AD;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    left: 39.5%;
+    bottom: 72.5%;
 
 
     }
@@ -343,11 +343,11 @@ hr {
     }
 
     .px5 {
-        position: absolute;
-        left: 44%;
-        bottom: 70%;
-        color: #9605AD;
-        font-size: 1.5vw;
+           position: absolute;
+    left: 41%;
+    bottom: 70%;
+    color: #9605AD;
+    font-size: 1.5vw;
     }
 
 
